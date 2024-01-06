@@ -1,0 +1,148 @@
+
+.header {
+    display: grid;
+    grid-template-areas:
+      'top-left top-right'
+      'bottom-left bottom-right';
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    background-image: url('../../assets/construction.jpg');
+    background-size: cover;
+    color:brown;
+    padding: 20px;
+  }
+  
+  .top-left {
+    grid-area: top-left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-left img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .top-left h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .top-left h1 {
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  
+  .top-right {
+    grid-area: top-right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .text-content {
+    text-align: left; 
+  }
+  
+  .text-content h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  }
+  
+  .text-content h3::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    left: -10px;
+    top: 0;
+  }
+  .bottom-left h1 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  
+  .bottom-right {
+    grid-area: bottom-right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .bottom-right img {
+    width: 250px;
+    height:180px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .header {
+      grid-template-areas:
+        'top-left top-left'
+        'top-right top-right'
+        'bottom-left bottom-left'
+        'bottom-right bottom-right';
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      text-align: center;
+    }
+  
+    .top-left img {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .top-left h2 {
+      margin-left: 0;
+    }
+  
+    .top-right {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu {
+      margin-top: 10px;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .bottom-right {
+      justify-content: center;
+    }
+  }
+  

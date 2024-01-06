@@ -1,0 +1,125 @@
+.contact {
+    padding: 20px;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .info,
+  .useful-links,
+  .contact-us,
+  .newsletter {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .company-info {
+    margin-top: 10px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .useful-links h3,
+  .contact-us h3,
+  .newsletter h3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .useful-links h3::before,
+  .contact-us h3::before,
+  .newsletter h3::before {
+    content: '';
+    display: block;
+    width: 5px; 
+    height: 100%; 
+    background-color: yellow;
+    position: absolute;
+    left: -10px; 
+  }
+  
+  .useful-links ul,
+  .contact-us ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .useful-links li,
+  .contact-us li {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .useful-links li::before,
+  .contact-us li::before {
+    content: '';
+    display: block;
+    width: 5px; 
+    height: 100%; 
+    background-color: yellow;
+    position: absolute;
+    left: -10px; 
+  }
+  
+  .newsletter p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .subscribe {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: grey;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+    .info,
+    .useful-links,
+    .contact-us,
+    .newsletter {
+      width: 48%;
+    }
+  }
+  
